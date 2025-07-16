@@ -98,7 +98,7 @@ export const loader = async ({ request }) => {
           const token = await user.getIdToken();
           const rating = reviewForm.rating.value;
           const comment = reviewForm.comment.value;
-          const res = await fetch('https://anti-younger-enhancement-zope.trycloudflare.com/api/submit-review', {
+          const res = await fetch('https://shopify-reviews-remix.vercel.app/api/submit-review', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
