@@ -1,0 +1,20 @@
+<div id="my-app-rating-widget-{{ product.id }}"></div>
+<script>
+ fetch("https://state-databases-arrival-judgment.trycloudflare.com/api/proxy?product_id={{ product.id }}")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("my-app-rating-widget-{{ product.id }}").innerHTML = html;
+    });
+</script>
+
+{% schema %}
+{
+  "name": "Star Rating",
+  "target": "section",
+  "settings": [
+    { "type": "product", "id": "product", "label": "product", "autofill": true },
+    { "type": "color", "id": "colour", "label": "Star Colour", "default": "#ff0000" }
+  ]
+}
+{% endschema %}
+

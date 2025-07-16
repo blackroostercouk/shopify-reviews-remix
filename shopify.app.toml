@@ -1,0 +1,37 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "dd30a343a2adc0e7778cfc60b8ba7893"
+name = "rating"
+handle = "rating-24"
+application_url = "https://state-databases-arrival-judgment.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "kenantestapp.myshopify.com"
+include_config_on_deploy = true
+
+[access.admin]
+direct_api_mode = "online"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_products,write_products"
+
+[auth]
+redirect_urls = [
+  "https://state-databases-arrival-judgment.trycloudflare.com/auth/callback",
+  "https://state-databases-arrival-judgment.trycloudflare.com/auth/shopify/callback",
+  "https://state-databases-arrival-judgment.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2025-07"
+
+[app_proxy]
+url = "https://state-databases-arrival-judgment.trycloudflare.com/api/proxy"
+subpath = "store-pickup"
+prefix = "apps"
+
+[app_preferences]
+url = "https://broadcast-drops-ago-purchasing.trycloudflare.com/preferences"
