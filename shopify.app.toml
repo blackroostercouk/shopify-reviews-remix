@@ -3,7 +3,7 @@
 client_id = "dd30a343a2adc0e7778cfc60b8ba7893"
 name = "rating"
 handle = "rating-24"
-application_url = "https://shopify-reviews-remix.vercel.app/"
+application_url = "https://pix-fit-g-spring.trycloudflare.com"
 embedded = true
 
 [build]
@@ -20,16 +20,16 @@ scopes = "read_products,write_products"
 
 [auth]
 redirect_urls = [
-  "https://shopify-reviews-remix.vercel.app/auth/callback",
-  "https://shopify-reviews-remix.vercel.app/auth/shopify/callback",
-  "https://shopify-reviews-remix.vercel.app/api/auth/callback"
+  "https://pix-fit-g-spring.trycloudflare.com/auth/callback",
+  "https://pix-fit-g-spring.trycloudflare.com/auth/shopify/callback",
+  "https://pix-fit-g-spring.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
 api_version = "2025-07"
 
 [app_proxy]
-url = "https://shopify-reviews-remix.vercel.app/api/proxy"
+url = "https://pix-fit-g-spring.trycloudflare.com/api/proxy"
 subpath = "store-pickup"
 prefix = "apps"
 
