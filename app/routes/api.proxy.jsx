@@ -1,7 +1,7 @@
 
 
 export const loader = async ({ request }) => {
-  const { firestoreAdmin } = await import("../utils/firebase-admin");
+  const { firestoreAdmin } = await import("~/utils/firebase-admin");
   const url = new URL(request.url);
   const productId = url.searchParams.get("product_id");
   if (!productId) {
