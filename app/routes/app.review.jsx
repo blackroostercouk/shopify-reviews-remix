@@ -3,10 +3,11 @@ import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import { Page, Card, DataTable, Thumbnail } from "@shopify/polaris";
 import { Spinner } from "@shopify/polaris";
-import { authenticate } from "../shopify.server";
+
 import { useSearchParams } from "@remix-run/react";
 
 export const loader = async ({ request }) => {
+  const { authenticate } = await import("../shopify.server");
   const url = new URL(request.url);
   const filterProductId = url.searchParams.get("productId");
 
