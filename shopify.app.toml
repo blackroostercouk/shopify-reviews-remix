@@ -3,7 +3,7 @@
 client_id = "dd30a343a2adc0e7778cfc60b8ba7893"
 name = "rating"
 handle = "rating-24"
-application_url = "https://chester-helps-quebec-fortune.trycloudflare.com"
+application_url = "https://shopify-reviews-remix.vercel.app"
 embedded = true
 
 [build]
@@ -20,18 +20,18 @@ scopes = "read_products,write_products"
 
 [auth]
 redirect_urls = [
-  "https://chester-helps-quebec-fortune.trycloudflare.com/auth/callback",
-  "https://chester-helps-quebec-fortune.trycloudflare.com/auth/shopify/callback",
-  "https://chester-helps-quebec-fortune.trycloudflare.com/api/auth/callback"
+  "https://shopify-reviews-remix.vercel.app/auth/callback",
+  "https://shopify-reviews-remix.vercel.app/auth/shopify/callback",
+  "https://shopify-reviews-remix.vercel.app/api/auth/callback"
 ]
 
 [webhooks]
 api_version = "2025-07"
 
 [app_proxy]
-url = "https://chester-helps-quebec-fortune.trycloudflare.com/api/proxy"
+url = "https://shopify-reviews-remix.vercel.app/api/proxy"
 subpath = "store-pickup"
 prefix = "apps"
 
 [app_preferences]
-url = "https://broadcast-drops-ago-purchasing.trycloudflare.com/preferences"
+url = "https://shopify-reviews-remix.vercel.app/preferences"
