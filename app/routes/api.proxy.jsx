@@ -12,7 +12,6 @@ export const loader = async ({ request }) => {
     }});
   }
   // Fetch reviews for this product
-  const { firestoreAdmin } = await import("~/utils/firebase-admin");
   const itemsSnapshot = await firestoreAdmin.collection(`reviews/${productId}/items`).get();
   const items = itemsSnapshot.docs.map(doc => doc.data());
   const averageRating = items.length
