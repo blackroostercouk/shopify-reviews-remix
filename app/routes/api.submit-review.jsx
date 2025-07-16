@@ -1,4 +1,3 @@
-import { firestoreAdmin } from "../utils/firebase-admin";
 import admin from "firebase-admin";
 
 export const action = async ({ request }) => {
@@ -17,7 +16,9 @@ export const action = async ({ request }) => {
       createdAt: new Date(),
       user: userEmail,
     };
-    await firestoreAdmin.collection(`reviews/${product_id}/items`).add(review);
+    const { firestoreAdmin } = await import("~/utils/firebase-admin");
+    const itemsRef = firestoreAdmin.collection(`reviews/${product_id}/items`);
+    await itemsRef.add(review);
     return new Response("OK", { status: 200 });
   } catch (e) {
     return new Response("Unauthorized", { status: 401 });

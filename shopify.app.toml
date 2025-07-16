@@ -3,7 +3,7 @@
 client_id = "dd30a343a2adc0e7778cfc60b8ba7893"
 name = "rating"
 handle = "rating-24"
-application_url = "https://state-databases-arrival-judgment.trycloudflare.com"
+application_url = "https://shopify-reviews-remix.vercel.app"
 embedded = true
 
 [build]
@@ -20,9 +20,9 @@ scopes = "read_products,write_products"
 
 [auth]
 redirect_urls = [
-  "https://state-databases-arrival-judgment.trycloudflare.com/auth/callback",
-  "https://state-databases-arrival-judgment.trycloudflare.com/auth/shopify/callback",
-  "https://state-databases-arrival-judgment.trycloudflare.com/api/auth/callback"
+  "https://shopify-reviews-remix.vercel.app/auth/callback",
+  "https://shopify-reviews-remix.vercel.app/auth/shopify/callback",
+  "https://shopify-reviews-remix.vercel.app/api/auth/callback"
 ]
 
 [webhooks]
