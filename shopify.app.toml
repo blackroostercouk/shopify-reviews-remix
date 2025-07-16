@@ -3,7 +3,7 @@
 client_id = "dd30a343a2adc0e7778cfc60b8ba7893"
 name = "rating"
 handle = "rating-24"
-application_url = "https://impose-snap-bargain-local.trycloudflare.com"
+application_url = "https://elliott-logged-subscription-corruption.trycloudflare.com"
 embedded = true
 
 [build]
@@ -20,16 +20,16 @@ scopes = "read_products,write_products"
 
 [auth]
 redirect_urls = [
-  "https://impose-snap-bargain-local.trycloudflare.com/auth/callback",
-  "https://impose-snap-bargain-local.trycloudflare.com/auth/shopify/callback",
-  "https://impose-snap-bargain-local.trycloudflare.com/api/auth/callback"
+  "https://elliott-logged-subscription-corruption.trycloudflare.com/auth/callback",
+  "https://elliott-logged-subscription-corruption.trycloudflare.com/auth/shopify/callback",
+  "https://elliott-logged-subscription-corruption.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
 api_version = "2025-07"
 
 [app_proxy]
-url = "https://impose-snap-bargain-local.trycloudflare.com/api/proxy"
+url = "https://elliott-logged-subscription-corruption.trycloudflare.com/api/proxy"
 subpath = "store-pickup"
 prefix = "apps"
 

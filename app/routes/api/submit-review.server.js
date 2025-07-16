@@ -1,5 +1,3 @@
-import admin from "firebase-admin";
-
 export const action = async ({ request }) => {
   if (request.method !== "POST") return new Response("Method Not Allowed", { status: 405 });
   try {
@@ -7,7 +5,8 @@ export const action = async ({ request }) => {
     if (!product_id || !rating || !comment || !idToken) {
       return new Response("Missing fields", { status: 400 });
     }
-    // Verify Firebase ID token
+    // Dynamically import admin and firestoreAdmin
+    const admin = await import("firebase-admin");
     const decoded = await admin.auth().verifyIdToken(idToken);
     const userEmail = decoded.email || "anonymous";
     const review = {
