@@ -3,7 +3,7 @@
 client_id = "dd30a343a2adc0e7778cfc60b8ba7893"
 name = "rating"
 handle = "rating-24"
-application_url = "https://shopify-reviews-remix-1r6rqz1su-kenans-projects-58908578.vercel.app"
+application_url = "https://shopify-reviews-remix.vercel.app/"
 embedded = true
 
 [build]
