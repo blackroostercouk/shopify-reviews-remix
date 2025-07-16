@@ -1,6 +1,6 @@
 <div id="my-app-rating-widget-{{ product.id }}"></div>
 <script>
- fetch("https://shopify-reviews-remix.vercel.app/api/proxy?product_id={{ product.id }}")state-databases-arrival-judgment.trycloudflare.com/api/proxy?product_id={{ product.id }}")
+ fetch("https://shopify-reviews-remix.vercel.app/api/proxy?product_id={{ product.id }}")
     .then(res => res.text())
     .then(html => {
       document.getElementById("my-app-rating-widget-{{ product.id }}").innerHTML = html;
